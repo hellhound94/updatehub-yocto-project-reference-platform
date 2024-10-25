@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote fetch="https://git.yoctoproject.org/git/" name="yocto" sync-j="4"/>
-  <remote fetch="https://code.ossystems.com.br" name="ossystems" sync-j="4" review="code.ossystems.com.br"/>
   <remote fetch="http://git.openembedded.org" name="oe" sync-j="4"/>
   <remote fetch="https://github.com" name="github" sync-j="4"/>
 
@@ -14,8 +13,8 @@
   <project remote="oe" name="meta-openembedded" path="sources/meta-openembedded"/>
 
   <!-- ### O.S. Systems Embedded Linux Core layers ### --> 
-  <project remote="ossystems" name="meta-ossystems-base" path="sources/meta-ossystems-base"/>
-  <project remote="ossystems" name="ossystems-yocto-base-scripts" path="sources/base">
+  <project remote="github" name="OSSystemsEmbeddedLinux/meta-ossystems-base" path="sources/meta-ossystems-base"/>
+  <project remote="github" name="OSSystemsEmbeddedLinux/ossystems-yocto-base-scripts" path="sources/base">
     <copyfile dest="setup-environment" src="setup-environment"/>
   </project>
 
